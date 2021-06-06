@@ -191,7 +191,7 @@ class WP {
 			$self     = preg_replace( $home_path_regex, '', $self );
 			$self     = trim( $self, '/' );
 
-			var_dump($req_uri);
+			
 
 
 			// The requested permalink is in $pathinfo for path info requests and
@@ -208,6 +208,8 @@ class WP {
 			$requested_file = $req_uri;
 
 			$this->request = $requested_path;
+
+			var_dump($this->request);
 
 			// Look for matches.
 			$request_match = $requested_path;
