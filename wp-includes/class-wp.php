@@ -409,6 +409,10 @@ class WP {
 		$status        = null;
 		$exit_required = false;
 
+
+		var_dump($this);
+
+
 		if ( is_user_logged_in() ) {
 			$headers = array_merge( $headers, wp_get_nocache_headers() );
 		} elseif ( ! empty( $_GET['unapproved'] ) && ! empty( $_GET['moderation-hash'] ) ) {
