@@ -132,7 +132,7 @@ class WP {
 	 */
 	public function parse_request( $extra_query_vars = '' ) {
 		global $wp_rewrite;
-		echo 'parsing';
+		
 		/**
 		 * Filters whether to parse the request.
 		 *
@@ -392,7 +392,11 @@ class WP {
 		 *
 		 * @param WP $this Current WordPress environment instance (passed by reference).
 		 */
+
+
 		do_action_ref_array( 'parse_request', array( &$this ) );
+
+		var_dump($this);
 	}
 
 	/**
