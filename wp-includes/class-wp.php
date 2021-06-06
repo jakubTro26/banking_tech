@@ -410,7 +410,7 @@ class WP {
 		$exit_required = false;
 
 
-		var_dump($this);
+		echo 'headers';
 
 
 		if ( is_user_logged_in() ) {
