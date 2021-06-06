@@ -198,7 +198,8 @@ class WP {
 			// $req_uri for other requests.
 			if ( ! empty( $pathinfo ) && ! preg_match( '|^.*' . $wp_rewrite->index . '$|', $pathinfo ) ) {
 				$requested_path = $pathinfo;
-
+				echo 'notempty';
+				var_dump($requested_path);
 				
 			} else {
 				// If the request uri is the index, blank it out so that we don't try to match it against a rule.
