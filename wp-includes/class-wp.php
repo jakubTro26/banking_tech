@@ -198,6 +198,8 @@ class WP {
 			// $req_uri for other requests.
 			if ( ! empty( $pathinfo ) && ! preg_match( '|^.*' . $wp_rewrite->index . '$|', $pathinfo ) ) {
 				$requested_path = $pathinfo;
+
+				
 			} else {
 				// If the request uri is the index, blank it out so that we don't try to match it against a rule.
 				if ( $req_uri == $wp_rewrite->index ) {
@@ -385,6 +387,13 @@ class WP {
 		 */
 		$this->query_vars = apply_filters( 'request', $this->query_vars );
 		echo 'this';
+
+
+
+
+
+
+		
 		var_dump($this);
 		/**
 		 * Fires once all query variables for the current request have been parsed.
