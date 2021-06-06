@@ -132,7 +132,7 @@ class WP {
 	 */
 	public function parse_request( $extra_query_vars = '' ) {
 		global $wp_rewrite;
-
+		echo 'parsing';
 		/**
 		 * Filters whether to parse the request.
 		 *
@@ -410,7 +410,7 @@ class WP {
 		$exit_required = false;
 
 
-		echo 'headers';
+		
 
 
 		if ( is_user_logged_in() ) {
