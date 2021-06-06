@@ -202,7 +202,7 @@ class WP {
 				var_dump($requested_path);
 				
 			} else {
-				echo 'empty';
+			
 				// If the request uri is the index, blank it out so that we don't try to match it against a rule.
 				if ( $req_uri == $wp_rewrite->index ) {
 					$req_uri = '';
@@ -213,7 +213,8 @@ class WP {
 
 			$this->request = $requested_path;
 
-
+			echo 'requrl';
+			var_dump($req_uri);
 			// Look for matches.
 			$request_match = $requested_path;
 			if ( empty( $request_match ) ) {
