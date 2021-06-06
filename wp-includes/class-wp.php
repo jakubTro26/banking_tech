@@ -232,7 +232,7 @@ class WP {
 						if ( $wp_rewrite->use_verbose_page_rules && preg_match( '/pagename=\$matches\[([0-9]+)\]/', $query, $varmatch ) ) {
 							// This is a verbose page match, let's check to be sure about it.
 							$page = get_page_by_path( $matches[ $varmatch[1] ] );
-							var_dump($page);
+							
 							if ( ! $page ) {
 								continue;
 							}

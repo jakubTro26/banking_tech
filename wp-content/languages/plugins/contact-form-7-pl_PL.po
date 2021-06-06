@@ -395,7 +395,7 @@ msgstr "Wystąpił problem z wysłaniem twojej wiadomości. Spróbuj ponownie p�
 
 #: includes/contact-form-template.php:153
 msgid "Thank you for your message. It has been sent."
-msgstr "Twoja wiadomość została wysłana. Dziękujemy!"
+msgstr "Twoja wiadomość została wysłana. Dziękujemy!!"
 
 #. translators: 1: blog name, 2: [your-subject]
 #: includes/contact-form-template.php:52 includes/contact-form-template.php:90
