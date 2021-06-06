@@ -386,15 +386,7 @@ class WP {
 		 * @param array $query_vars The array of requested query variables.
 		 */
 		$this->query_vars = apply_filters( 'request', $this->query_vars );
-		echo 'this';
-
-
-
-
-
-
 		
-		var_dump($this);
 		/**
 		 * Fires once all query variables for the current request have been parsed.
 		 *
