@@ -226,11 +226,11 @@ class WP {
 			} else {
 				foreach ( (array) $rewrite as $match => $query ) {
 
-					echo 'requrl';
-					var_dump($requested_path);
+					
 					// If the requested file is the anchor of the match, prepend it to the path info.
 					if ( ! empty( $requested_file ) && strpos( $match, $requested_file ) === 0 && $requested_file != $requested_path ) {
 						$request_match = $requested_file . '/' . $requested_path;
+						echo 'notequal';
 					}
 
 					if ( preg_match( "#^$match#", $request_match, $matches ) ||
