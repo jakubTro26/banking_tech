@@ -287,7 +287,7 @@ function wpcf7_rest_create_feedback( WP_REST_Request $request ) {
 	$unit_tag = $request->get_param( '_wpcf7_unit_tag' );
 
 	echo 'req1234';
-	var_dump(debug_backtrace(0));
+	echo 'kuba';
 
 	$response = array(
 		'into' => '#' . wpcf7_sanitize_unit_tag( $unit_tag ),
