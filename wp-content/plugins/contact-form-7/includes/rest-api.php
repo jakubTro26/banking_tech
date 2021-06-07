@@ -283,8 +283,7 @@ function wpcf7_rest_create_feedback( WP_REST_Request $request ) {
 	}
 
 
-	echo 'resp';
-	var_dump($item);
+	
 
 	$result = $item->submit();
 

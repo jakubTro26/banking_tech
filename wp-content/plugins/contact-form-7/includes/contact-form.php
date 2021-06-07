@@ -759,6 +759,9 @@ class WPCF7_ContactForm {
 		$submission = WPCF7_Submission::get_instance( $this, array(
 			'skip_mail' => $args['skip_mail'],
 		) );
+			echo 'sub123';
+			var_dump($submission);
+
 
 		$result = array(
 			'contact_form_id' => $this->id(),
