@@ -479,7 +479,7 @@ class WPCF7_ContactForm {
 	public function form_response_output() {
 
 
-		var_dump(debug_backtrace(0));
+		
 		$status = 'init';
 		$class = 'wpcf7-response-output';
 		$role = '';
@@ -489,6 +489,9 @@ class WPCF7_ContactForm {
 			$role = 'alert';
 
 			$submission = WPCF7_Submission::get_instance();
+			echo 'sub123';
+			var_dump($submission);
+
 			$status = $submission->get_status();
 			$content = $submission->get_response();
 
