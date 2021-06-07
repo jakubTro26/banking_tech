@@ -477,6 +477,9 @@ class WPCF7_ContactForm {
 	}
 
 	public function form_response_output() {
+
+
+		var_dump(debug_backtrace(0));
 		$status = 'init';
 		$class = 'wpcf7-response-output';
 		$role = '';
