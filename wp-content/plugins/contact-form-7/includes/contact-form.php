@@ -489,8 +489,7 @@ class WPCF7_ContactForm {
 			$role = 'alert';
 
 			$submission = WPCF7_Submission::get_instance();
-			echo 'sub123';
-			var_dump($submission);
+		
 
 			$status = $submission->get_status();
 			$content = $submission->get_response();
