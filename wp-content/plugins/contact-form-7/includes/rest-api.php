@@ -287,7 +287,8 @@ function wpcf7_rest_create_feedback( WP_REST_Request $request ) {
 	$unit_tag = $request->get_param( '_wpcf7_unit_tag' );
 
 	
-	
+	echo 'resp';
+	var_dump($result['message']);
 
 
 	$response = array(
@@ -313,8 +314,7 @@ function wpcf7_rest_create_feedback( WP_REST_Request $request ) {
 
 	$response = apply_filters( 'wpcf7_ajax_json_echo', $response, $result );
 
-	echo 'resp';
-	var_dump($response);
+	
 
 
 	return rest_ensure_response( $response );
