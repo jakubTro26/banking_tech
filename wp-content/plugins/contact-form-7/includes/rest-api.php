@@ -313,6 +313,10 @@ function wpcf7_rest_create_feedback( WP_REST_Request $request ) {
 
 	$response = apply_filters( 'wpcf7_ajax_json_echo', $response, $result );
 
+	echo 'resp';
+	var_dump($response);
+
+
 	return rest_ensure_response( $response );
 }
 
