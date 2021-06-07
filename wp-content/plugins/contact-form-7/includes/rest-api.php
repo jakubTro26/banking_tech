@@ -282,13 +282,16 @@ function wpcf7_rest_create_feedback( WP_REST_Request $request ) {
 			array( 'status' => 404 ) );
 	}
 
+
+	echo 'resp';
+	var_dump($item);
+
 	$result = $item->submit();
 
 	$unit_tag = $request->get_param( '_wpcf7_unit_tag' );
 
 	
-	echo 'resp';
-	var_dump($result['message']);
+	
 
 
 	$response = array(
