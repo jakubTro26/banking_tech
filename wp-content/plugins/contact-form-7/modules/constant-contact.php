@@ -662,6 +662,10 @@ class WPCF7_ConstantContact_ContactPostRequest {
 		}
 
 		if ( isset( $posted_data['your-email'] ) ) {
+
+
+			echo 'post123';
+			echo $posted_data['your-email'];
 			$this->set_email_address( $posted_data['your-email'], 'implicit' );
 		}
 
