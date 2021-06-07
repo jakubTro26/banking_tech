@@ -287,9 +287,7 @@ class WPCF7_ContactForm {
 			return false;
 		}
 
-		echo 'post123';
-		echo $_POST['_wpcf7_unit_tag'];
-		echo $_POST['your-email'];
+		
 
 
 
