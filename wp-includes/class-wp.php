@@ -310,8 +310,10 @@ class WP {
 		foreach ( $this->public_query_vars as $wpvar ) {
 
 
-			echo 'war';
-			var_dump($wpvar);
+			//echo 'war';
+			//var_dump($wpvar);
+
+			
 			if ( isset( $this->extra_query_vars[ $wpvar ] ) ) {
 				$this->query_vars[ $wpvar ] = $this->extra_query_vars[ $wpvar ];
 			} elseif ( isset( $_GET[ $wpvar ] ) && isset( $_POST[ $wpvar ] ) && $_GET[ $wpvar ] !== $_POST[ $wpvar ] ) {
