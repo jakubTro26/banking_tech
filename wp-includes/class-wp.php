@@ -235,7 +235,7 @@ class WP {
 
 					if ( preg_match( "#^$match#", $request_match, $matches ) ||
 						preg_match( "#^$match#", urldecode( $request_match ), $matches ) ) {
-							echo 'anotherig';
+					//ten if jest wykonywany
 						if ( $wp_rewrite->use_verbose_page_rules && preg_match( '/pagename=\$matches\[([0-9]+)\]/', $query, $varmatch ) ) {
 							// This is a verbose page match, let's check to be sure about it.
 							$page = get_page_by_path( $matches[ $varmatch[1] ] );
@@ -308,6 +308,10 @@ class WP {
 		}
 
 		foreach ( $this->public_query_vars as $wpvar ) {
+
+
+			echo 'war';
+			var_dump($wpvar);
 			if ( isset( $this->extra_query_vars[ $wpvar ] ) ) {
 				$this->query_vars[ $wpvar ] = $this->extra_query_vars[ $wpvar ];
 			} elseif ( isset( $_GET[ $wpvar ] ) && isset( $_POST[ $wpvar ] ) && $_GET[ $wpvar ] !== $_POST[ $wpvar ] ) {
