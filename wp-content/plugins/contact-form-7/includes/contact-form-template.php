@@ -134,6 +134,8 @@ class WPCF7_ContactFormTemplate {
 	}
 
 	public static function messages() {
+
+		var_dump(debug_backtrace(0));
 		$messages = array();
 
 		foreach ( wpcf7_messages() as $key => $arr ) {
